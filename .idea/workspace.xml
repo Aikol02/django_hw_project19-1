@@ -15,8 +15,6 @@
       <change beforePath="$PROJECT_DIR$/../boty/.idea/boty.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../boty/.idea/boty.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../boty/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../boty/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../boty/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/../boty/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/django_hw_project19-1.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/django_hw_project19-1.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../telegram_bot_hw/.env" beforeDir="false" afterPath="$PROJECT_DIR$/../telegram_bot/.env" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -145,6 +143,7 @@
       <workItem from="1661245841961" duration="11369000" />
       <workItem from="1661259266482" duration="558000" />
       <workItem from="1661259874592" duration="2664000" />
+      <workItem from="1661262591469" duration="984000" />
     </task>
     <servers />
   </component>
