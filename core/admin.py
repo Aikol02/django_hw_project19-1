@@ -1,14 +1,12 @@
 from django.contrib import admin
-
 from .models import Bottle, BottlesCount
 
 
 class BottleAdmin(admin.ModelAdmin):
 	model = Bottle
-	list_display = ['maker', 'volume', 'description', 'in_stock']
-	list_editable = ['in_stock']
-	fields = ['maker', 'volume', 'description', 'in_stock']
-# readonly_fields = ['maker']
+	list_display = ['maker', 'volume', 'expired']
+	list_editable = ['expired']
+	fields = ['maker', 'volume', 'description', 'expired']
 
 
 admin.site.register(Bottle, BottleAdmin)
@@ -16,10 +14,9 @@ admin.site.register(Bottle, BottleAdmin)
 
 class BottleCountAdmin(admin.ModelAdmin):
 	model = BottlesCount
-	list_display = ['bottle', 'count', 'order']
+	list_display = ['order', 'bottle', 'count']
 	list_editable = ['count']
 	fields = ['bottle', 'count', 'order']
-# readonly_fields = ['bottle']
 
 
 admin.site.register(BottlesCount, BottleCountAdmin)
