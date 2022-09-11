@@ -2,7 +2,7 @@
 
 {% block page %}
     <div class="client">
-        {% for client in object_list %}
+        {% for client in clients_list %}
             <div>
                 <a href="/client/{{ client.id }}">{{ client.name }}</a>
             </div>
@@ -13,3 +13,4 @@
         {% endfor %}
     </div>
 {% endblock %}
+

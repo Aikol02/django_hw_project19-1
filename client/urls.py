@@ -8,7 +8,7 @@ from clients.forms import *
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('contacts/', contacts),
-    path('info/', info),
+    path('', info),
     path('makers/', MakersListView.as_view()),
     path('clients/', ClientListView.as_view(), name='clients-list'),
     path('client/<int:pk>/', ClientDetailView.as_view(), name="client-detail"),

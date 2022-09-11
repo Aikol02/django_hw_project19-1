@@ -5,7 +5,7 @@ from .models import Client, Order, UserRegisterForm
 from core.models import Bottle
 from django.views import View
 from django.views.generic import ListView, DetailView, CreateView, UpdateView, DeleteView
-from .forms import OrderForm, OrderUpdateForm, OrderDeleteForm, ClientForm, LoginUserForm
+from .forms import LoginUserForm
 
 
 def contacts(request):
@@ -160,6 +160,7 @@ class CreateOrderDjangoView(CreateView):
     template_name = 'order_djangoform.html'
     fields = ['name', 'contacts', 'description']
     success_url = '/order/'
+
 
 # def get_context_data(self, **kwargs):
 #     context = super().get_context_data()
