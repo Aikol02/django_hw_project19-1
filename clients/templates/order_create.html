@@ -6,13 +6,10 @@
 
 {% bootstrap_messages %}
 
-{% block page_content %}
-
-    <h1>{{ our_text }}</h1>
+{% block page %}
     <form method="POST">
         {% csrf_token %}
         {% bootstrap_form form %}
-        <button>Оформить заказ</button>
+        <button>Добавить заказ</button>
     </form>
-
 {% endblock %}

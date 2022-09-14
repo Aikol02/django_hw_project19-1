@@ -1,22 +1,15 @@
 from django.contrib import admin
+# core/admin.py
 from .models import Bottle, BottlesCount
 
-
-class BottleAdmin(admin.ModelAdmin):
-    model = Bottle
-    list_display = ['maker', 'volume', 'expired']
-    list_editable = ['expired']
-    fields = ['maker', 'volume', 'description', 'expired']
+admin.site.register(Bottle)
 
 
-admin.site.register(Bottle, BottleAdmin)
-
-
-class BottleCountAdmin(admin.ModelAdmin):
+class BottlesCountAdmin(admin.ModelAdmin):
     model = BottlesCount
-    list_display = ['order', 'bottle', 'count']
-    list_editable = ['count']
-    fields = ['bottle', 'count', 'order']
+    list_display = ["order", "bottle", "count"]
+    list_editable = ["bottle", "count"]
+    fields = ["order", "bottle", "count"]
 
 
-admin.site.register(BottlesCount, BottleCountAdmin)
+admin.site.register(BottlesCount, BottlesCountAdmin)

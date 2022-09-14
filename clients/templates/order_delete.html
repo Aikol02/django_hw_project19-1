@@ -2,7 +2,9 @@
 {% block page %}
     <form method="POST">
         {% csrf_token %}
-        {{ form.as_p }}
-        <button>Delete</button>
+        {{ form.as_p }}<br/>
+        <div>Подтвердите удаление</div>
+        <br/>
+        <button>Удалить</button>
     </form>
 {% endblock %}

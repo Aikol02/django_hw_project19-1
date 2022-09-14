@@ -1,8 +1,10 @@
 {% extends 'base.html' %}
-{% block page %}
+{% block page_content %}
+
     <form method="POST">
         {% csrf_token %}
         {{ form.as_p }}
-        <button>Update</button>
+        <button>Обновить</button>
     </form>
+
 {% endblock %}

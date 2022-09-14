@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+{% block page %}<br/>
+    <form method="get">
+        {{ filter.form.as_p }}
+        <input type="submit"/>
+    </form>
+    {% for client in filter.qs %}
+        <br>
+        <div>
+            Имя: {{ client.name }}<br/>
+            Адрес: {{ client.address }}<br/>
+            Кол-во бутылей: {{ client.bottles_ordered }}<br/>
+            Фотография:
+            {% if client.photo %}
+                <br/>
+                <img src="{{ client.photo.url }}" alt="нет фото">
+            {% endif %}
+        </div>
+        <hr>
+    {% endfor %}
+{% endblock %}
